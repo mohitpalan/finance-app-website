@@ -53,7 +53,7 @@ jobs:
             echo "Local health check passed!"
           fi
           sleep 3
-          if curl -sf https://financetracker.web.mohitpalan.me/health > /dev/null 2>&1; then
+          if curl -sf https://finance.mohitpalan.me/health > /dev/null 2>&1; then
             echo "Public health check passed!"
           else
             echo "Public endpoint not reachable (may need DNS/Cloudflare setup)"
