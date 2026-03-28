@@ -31,6 +31,14 @@ export default function Footer() {
             >
               <Github size={14} /> GitHub
             </a>
+            <a
+              href="https://financetracker.mohitpalan.me/privacy-policy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-teal-400 transition-colors"
+            >
+              Privacy Policy
+            </a>
             <span className="text-slate-600">|</span>
             <span className="text-slate-500">&copy; {new Date().getFullYear()} Mohit Palan</span>
           </div>

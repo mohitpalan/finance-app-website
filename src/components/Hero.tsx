@@ -118,8 +118,8 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-lg text-slate-500 dark:text-slate-400 max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
-              Track expenses, split bills with friends, manage budgets, and gain insights into your spending
-              &mdash; all from your phone.
+              Track expenses, split bills with friends, and take full control of your budget.
+              All from your phone, completely private.
             </motion.p>
 
             <motion.div

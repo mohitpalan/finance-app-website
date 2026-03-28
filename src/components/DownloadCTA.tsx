@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Download, ExternalLink } from 'lucide-react'
+import { ExternalLink, Clock } from 'lucide-react'
 
 export default function DownloadCTA() {
   const ref = useRef(null)
@@ -29,23 +29,15 @@ export default function DownloadCTA() {
               Ready to take control of your finances?
             </h2>
             <p className="text-teal-100 text-lg max-w-lg mx-auto mb-10 leading-relaxed">
-              Join thousands of users who have simplified their money management. Download the app and get started in seconds.
+              Your finances, completely private. No ads, no data selling, no compromises. Take control in seconds.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-              <button className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-white text-teal-600 font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-pointer">
-                <Download size={22} />
+              <button className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-white text-teal-600 font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-pointer opacity-90">
+                <Clock size={22} />
                 <div className="text-left">
-                  <div className="text-[10px] font-medium text-teal-400 uppercase tracking-wider">Download on</div>
+                  <div className="text-[10px] font-medium text-teal-400 uppercase tracking-wider">Coming Soon on</div>
                   <div className="text-base">Google Play</div>
-                </div>
-              </button>
-
-              <button className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-white/15 backdrop-blur text-white font-bold border border-white/20 hover:bg-white/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer">
-                <Download size={22} />
-                <div className="text-left">
-                  <div className="text-[10px] font-medium text-teal-200 uppercase tracking-wider">Download on</div>
-                  <div className="text-base">App Store</div>
                 </div>
               </button>
             </div>
