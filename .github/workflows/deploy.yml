@@ -49,14 +49,13 @@ jobs:
 
       - name: Health check
         run: |
-          if curl -sf http://localhost/health > /dev/null 2>&1; then
-            echo "Local health check passed!"
-          fi
+          # The website is served at the root of financetracker.mohitpalan.me
+          # (/health on that domain is the API's health endpoint, not the site's).
           sleep 3
-          if curl -sf https://financetracker.web.mohitpalan.me/health > /dev/null 2>&1; then
+          if curl -sf https://financetracker.mohitpalan.me/ > /dev/null 2>&1; then
             echo "Public health check passed!"
           else
-            echo "Public endpoint not reachable (may need DNS/Cloudflare setup)"
+            echo "Public endpoint not reachable (check Cloudflare DNS / nginx)"
           fi
 
       - name: Notify on failure
